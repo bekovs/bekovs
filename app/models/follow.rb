@@ -1,4 +1,5 @@
 class Follow < ApplicationRecord
-  belongs_to :follower
-  belongs_to :following
+  
+	has_belongs_to_many :users
+
 end
